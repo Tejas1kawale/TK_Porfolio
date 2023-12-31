@@ -8,22 +8,24 @@ import {
   Link
 } from "react-router-dom";
 import About from './components/About';
+import Projects from './components/Projects';
 
 function App() {
   return (
     <>
-          <Router>
-      <>
-      <Navbar></Navbar>
-     
-      <Switch>
-       
-        <Route path="/">
-            <About></About>
-        </Route>
-      </Switch>
-      </>
-  </Router>
+      <Router>
+          <>
+          <Navbar></Navbar>
+        
+          <Switch>
+          
+            <Route path="/">
+                <About></About>
+                <Projects></Projects>
+            </Route>
+          </Switch>
+          </>
+      </Router>
     </>
 
   );
