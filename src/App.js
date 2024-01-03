@@ -1,32 +1,28 @@
-import logo from './logo.svg';
 import './App.css';
 import Navbar from './components/Navbar';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
 import About from './components/About';
 import Projects from './components/Projects';
 
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route
+} from "react-router-dom";
+
 function App() {
   return (
-    <>
+   
       <Router>
-          <>
-          <Navbar></Navbar>
-        
-          <Switch>
+        <Navbar/>
+          <Routes>s
           
-            <Route path="/">
-                <About></About>
-                <Projects></Projects>
-            </Route>
-          </Switch>
-          </>
+            <Route path="/" element={<About/>}> </Route>
+            
+            <Route path="/about" element={<About/>}></Route>
+            <Route path="/projects" element={<Projects/>}></Route>
+          </Routes>
+          
       </Router>
-    </>
 
   );
 }

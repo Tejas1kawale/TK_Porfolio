@@ -172,7 +172,6 @@
 .DesktopMenuItem:hover{
   color: rgba(64, 195, 255);
   border-bottom:2px solid rgb(252, 253, 253) ;
-  padding-top: 2px;
 }
 .DesktopMenuItem{
   color: white;
@@ -191,7 +190,7 @@
   position: absolute;
   z-index: -1;
   display: flex;
-  padding-left: 45px;
+  padding-left: 50px;
   padding-top: 100px;
   flex-direction: column;
   
@@ -208,7 +207,7 @@
 .introPara
 {
   font-size: 21px;
-
+  font-family: monospace;
 }
 .btn:hover{
   background-color: white;
@@ -231,4 +230,19 @@
 }
 .btnText{
   padding: 7px;
+}
+@media screen and (max-width:700px) {
+  .intro{
+    right: 2px;
+  }
+  .introText{
+    font-size: 30px;
+    font-weight: 1800;
+    font-family: monospace;
+  }
+}
+.projects{
+position: absolute;
+
+color: yellow;
 }
